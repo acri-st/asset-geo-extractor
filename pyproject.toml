@@ -1,0 +1,26 @@
+[project]
+name = "asset-geo-extractor"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+
+dependencies = [
+    "msfwk>=1.0.8",
+    "despsharedlibrary==1.0.3",
+    "aiohttp>=3.8.0",
+    "elasticsearch[async]==8.6.2",
+    "elastic-transport==8.13.1",
+    "pydantic>=2.0.0",
+    "geojson>=3.2.0",
+]
+
+[tool.uv.sources]
+msfwk = { path = "libs/base-service" }
+despsharedlibrary = { path = "libs/desp_shared_library" }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.6",
+]
+

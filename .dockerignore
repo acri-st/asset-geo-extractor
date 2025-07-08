@@ -1,0 +1,6 @@
+tests
+Dockerfile
+README.md
+.venv
+.pytest_cache
+.git*
